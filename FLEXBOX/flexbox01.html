@@ -16,11 +16,11 @@
         .container {
             background-color: lightseagreen;
             padding: 15px;
-            display:flex;
-            flex-direction:row-reverse;
             margin: 10px;
+            width: 300px;
             box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.459);
             border-radius: 10px;
+            flex-flow: column wrap;
         }
 
         .item {
@@ -31,15 +31,14 @@
             font-family: Arial, Helvetica, sans-serif;
             border: 3px solid black;
             border-radius: 5px;
-            tex
         }
 
         #container-01 {
-            flex-direction: row;
+            flex-flow: row nowrap;
         }
 
         #container-02 {
-            flex-direction: column;
+            height: 400px;
         }
     </style>
 </head>
@@ -51,6 +50,11 @@
         <div class="item">ITEM 03</div>
         <div class="item">ITEM 04</div>
         <div class="item">ITEM 05</div>
+        <div class="item">ITEM 06</div>
+        <div class="item">ITEM 07</div>
+        <div class="item">ITEM 08</div>
+        <div class="item">ITEM 09</div>
+        <div class="item">ITEM 10</div>
     </div>
     <div class="container" id="container-02">
         <div class="item">ITEM 01</div>
@@ -58,6 +62,11 @@
         <div class="item">ITEM 03</div>
         <div class="item">ITEM 04</div>
         <div class="item">ITEM 05</div>
+        <div class="item">ITEM 06</div>
+        <div class="item">ITEM 07</div>
+        <div class="item">ITEM 08</div>
+        <div class="item">ITEM 09</div>
+        <div class="item">ITEM 10</div>
     </div>
 </body>
 </html>
