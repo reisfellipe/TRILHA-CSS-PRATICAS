@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POSICIONAMENTOS CSS</title>
     <style>
+        * {
+            margin: 0;
+        }
+
         #exemplo-1 {
             width: 400px;
             height: 400px;
@@ -26,16 +30,41 @@
             top: 0;
         }
 
-        .navbar
+        header {
+            vertical-align: baseline;
+            text-transform: uppercase;
+            text-align: end;
+            background-color: lightgreen;
+            margin: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar {
+            vertical-align: text-bottom;
+    
+        }
+
+        .navbar ul li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
-                <li>Menu</li>
-                <li>Opções</li>
-                <li>Ajuda</li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">OPÇÕES</a></li>
+                <li><a href="#">AJUDA</a></li>
             </ul>
         </nav>
     </header>
@@ -44,5 +73,17 @@
     <div id="exemplo-1" class="elemento-pai">
         <div class="elemento-filho"></div>
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et numquam sequi laudantium labore dolorem nulla natus impedit quas, odit, dolorum obcaecati aspernatur debitis recusandae nemo repellendus facere, asperiores error laborum?</p>
 </body>
 </html>
