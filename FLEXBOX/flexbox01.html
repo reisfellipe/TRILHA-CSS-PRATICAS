@@ -5,28 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEXBOX</title>
     <style>
+        body {
+            background-color: lightgreen;
+        }
+
+        h1 {
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.404);
+        }
+
         .container {
             background-color: lightseagreen;
             padding: 15px;
-            display: inline-flex;
+            display:flex;
             flex-direction:row-reverse;
+            margin: 10px;
+            box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.459);
+            border-radius: 10px;
         }
 
         .item {
             margin: 10px;
+            background-color: rgba(255, 68, 0, 0.753);
+            padding: 4px;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 3px solid black;
+            border-radius: 5px;
+            tex
+        }
+
+        #container-01 {
+            flex-direction: row;
+        }
+
+        #container-02 {
+            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <h1>Primeiro contato com FLEXBOX</h1>
-    <div class="container">
+    <div class="container" id="container-01">
         <div class="item">ITEM 01</div>
         <div class="item">ITEM 02</div>
         <div class="item">ITEM 03</div>
         <div class="item">ITEM 04</div>
         <div class="item">ITEM 05</div>
     </div>
-    <div class="container">
+    <div class="container" id="container-02">
         <div class="item">ITEM 01</div>
         <div class="item">ITEM 02</div>
         <div class="item">ITEM 03</div>
