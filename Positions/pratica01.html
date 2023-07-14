@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSICIONAMENTOS CSS</title>
+    <style>
+        #exemplo-1 {
+            width: 400px;
+            height: 400px;
+            border: 3px solid darkblue;
+        }
+
+        .elemento-pai {
+            background-color: lightcoral;
+            position: relative;
+        }
+
+        .elemento-filho {
+            background-color: rgb(26, 117, 179);
+            border: 5px solid orangered;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .navbar
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>Menu</li>
+                <li>Opções</li>
+                <li>Ajuda</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Primeiro teste para posicionar DIVS</h1>
+    <br><br><br>
+    <div id="exemplo-1" class="elemento-pai">
+        <div class="elemento-filho"></div>
+    </div>
+</body>
+</html>
