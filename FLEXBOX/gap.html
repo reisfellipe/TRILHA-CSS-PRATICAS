@@ -13,14 +13,33 @@
             background-color: lightgreen;
         }
 
+        header {
+            background-color: lightseagreen;
+            padding: 10px;
+        }
+
+        header nav ul li {
+            display: inline-flex;
+            margin: 10px;
+        }
+
+        header nav ul li a {
+            color: black;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
         .container {
             background-color: limegreen;
-            width: 400px;
-            height: 400px;
-            margin: 25px;
+            width: 300px;
+            height: 250px;
+            margin: 20px;
+            padding: 10px;
 
             display: flex;
             flex-wrap: wrap;
+            gap: 30px 20px;
         }
 
         #container-01 {
@@ -32,17 +51,19 @@
         }
 
         .item {
-            padding: 20px;
             background-color: orchid;
-            width: 30px;
-            height: 30px;
-            margin: 10px;
-            text-align: center;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="align-items.html">Voltar</a></li>
+                <li><a href="gap.html">Próximo</a></li>
+            </ul>
+        </nav>
+    </header>
     <div>
         <div class="container" id="container-01">
             <div class="item">ITEM 1</div>
