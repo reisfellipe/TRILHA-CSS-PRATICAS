@@ -43,6 +43,18 @@
             border-radius: 5px;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
         }
+        /*Na propriedade Order, devemos saber que Quanto maior o numero, mais à frente ele fica, e Quanto Menor for, antes ele fica*/
+        /*valor padrão é 0*/
+        /*Aceita valores Negativos*/
+
+        .item-05 {
+            order: -1; /*Nesse caso, utilizou um valor negativo, então ele fica em primeira posição uma vez que todos os outro tem como valor padrão 0, que é MAIOR QUE -1*/
+        }
+
+        .item-06 {
+            order: -1; /*Nesse caso, como foi determinado o mesmo valor do item acima, o css leva em conta a ordem citada no HTML*/
+        }
+
 
         #container-01 {
             flex-flow: row nowrap;
@@ -89,7 +101,7 @@
     <header>
         <nav class="navbar-menu">
             <ul>
-                <li><a href="flexbox01.html">flexbox</a></li>
+                <li><a href="flexbox01.html">Início</a></li>
                 <li><a href="align-items.html">Próximo</a></li>
             </ul>
         </nav>
