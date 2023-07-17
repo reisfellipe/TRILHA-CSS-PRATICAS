@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORDER</title>
+    <title>FLEX-GROW</title>
     <style>
         * {
             margin: 0;
@@ -42,19 +42,13 @@
             border: 3px solid black;
             border-radius: 5px;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
-        }
-        /*Na propriedade Order, devemos saber que Quanto maior o numero, mais à frente ele fica, e Quanto Menor for, antes ele fica*/
-        /*valor padrão é 0*/
-        /*Aceita valores Negativos*/
 
-        .item-05 {
-            order: -1; /*Nesse caso, utilizou um valor negativo, então ele fica em primeira posição uma vez que todos os outro tem como valor padrão 0, que é MAIOR QUE -1*/
+            flex-grow: 1;
         }
 
-        .item-06 {
-            order: -1; /*Nesse caso, como foi determinado o mesmo valor do item acima, o css leva em conta a ordem citada no HTML*/
+        .item-02 {
+            flex-grow: 10;
         }
-
 
         #container-01 {
             flex-flow: row nowrap;
@@ -102,7 +96,7 @@
         <nav class="navbar-menu">
             <ul>
                 <li><a href="flexbox01.html">Início</a></li>
-                <li><a href="flex-grow.html">Próximo</a></li>
+                <li><a href="align-items.html">Próximo</a></li>
             </ul>
         </nav>
     </header>
@@ -111,25 +105,11 @@
         <div class="item item-01">ITEM 01</div>
         <div class="item item-02">ITEM 02</div>
         <div class="item item-03">ITEM 03</div>
-        <div class="item item-04">ITEM 04</div>
-        <div class="item item-05">ITEM 05</div>
-        <div class="item item-06">ITEM 06</div>
-        <div class="item item-07">ITEM 07</div>
-        <div class="item item-08">ITEM 08</div>
-        <div class="item item-09">ITEM 09</div>
-        <div class="item item-10">ITEM 10</div>
     </div>
     <div class="container" id="container-02">
         <div class="item item-01">ITEM 01</div>
         <div class="item item-02">ITEM 02</div>
         <div class="item item-03">ITEM 03</div>
-        <div class="item item-04">ITEM 04</div>
-        <div class="item item-05">ITEM 05</div>
-        <div class="item item-06">ITEM 06</div>
-        <div class="item item-07">ITEM 07</div>
-        <div class="item item-08">ITEM 08</div>
-        <div class="item item-09">ITEM 09</div>
-        <div class="item item-10">ITEM 10</div>
     </div>
 </body>
 </html>
