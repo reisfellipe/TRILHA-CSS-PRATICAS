@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLEX-GROW</title>
+    <title>FLEX-SHRINK</title>
     <style>
         * {
             margin: 0;
@@ -24,40 +24,36 @@
             background-color: lightseagreen;
             padding: 15px;
             margin: 10px;
-            width: 500px;
+            width: 300px;
+            height: 300px;
             box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.459);
             border-radius: 10px;
-            margin-left: 30px;
+            margin-left: 90px;
 
             display: flex;
             justify-content: space-evenly;
+            gap: 10px;
         }
 
         .item {
-            margin: 10px;
+            display: flex;
             background-color: rgba(255, 68, 0, 0.753);
-            padding: 4px;
-            font-weight: 800;
-            font-family: Arial, Helvetica, sans-serif;
-            border: 3px solid black;
-            border-radius: 5px;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
-
-            flex-grow: 1;
+            padding: 8px;
+            height: 30px;
+            width: 30px;
+            flex-shrink: 1;
         }
 
-        .item-02 {
-            flex-grow: 10;
+        .item-04 {
+            flex-shrink: 2;
         }
 
         #container-01 {
             flex-flow: row nowrap;
-            width: 700px;
         }
 
         #container-02 {
-            flex-flow: column wrap;
-            height: 400px;
+            flex-flow: column nowrap;
         }
 
         header {
@@ -96,20 +92,26 @@
         <nav class="navbar-menu">
             <ul>
                 <li><a href="flexbox01.html">Início</a></li>
-                <li><a href="flex-shrink.html">Próximo</a></li>
+                <li><a href="align-items.html">Próximo</a></li>
             </ul>
         </nav>
     </header>
-    <h1>FLEXBOX: Espaçando nossos itens dentro do espaço vago do container com flex-grow</h1>
+    <h1>FLEXBOX: Diminuindo tamanho de acordo com o espaço de tela, se necessáriom com Flex-shrink</h1>
     <div class="container" id="container-01">
         <div class="item item-01">ITEM 01</div>
         <div class="item item-02">ITEM 02</div>
         <div class="item item-03">ITEM 03</div>
+        <div class="item item-04">ITEM 04</div>
+        <div class="item item-05">ITEM 05</div>
+        <div class="item item-06">ITEM 06</div>
     </div>
     <div class="container" id="container-02">
         <div class="item item-01">ITEM 01</div>
         <div class="item item-02">ITEM 02</div>
         <div class="item item-03">ITEM 03</div>
+        <div class="item item-04">ITEM 04</div>
+        <div class="item item-05">ITEM 05</div>
+        <div class="item item-06">ITEM 06</div>
     </div>
 </body>
 </html>
