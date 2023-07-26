@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas e Colunas</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+
+        .container {
+            background-color: rgb(222, 255, 37);
+            padding: 10px;
+            height: 500px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 100px); /*A medida fr deixa as colunas responsivas ocupando todo espaço do Container*/
+            grid-template-rows: 1fr 1fr; /*Só funcionará a medida FR se tiver definido o HEIGHT do container*/
+        }
+
+        .container2 {
+            margin: 30px;
+            background-color: rgb(21, 110, 91);
+            padding: 10px;
+            height: 300px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr 2fr); /*O numero 6 indica o numero desejado de colunas, e depois as medidas das mesmas*/
+            grid-template-rows: repeat(3, 1fr); /*Só funcionará a medida FR se tiver definido o HEIGHT do container*/
+        }
+
+        .item{
+            padding: 10px;
+            border: 2.2px solid black;
+        }
+
+        .item-01 {
+            background-color: rgba(185, 5, 185, 0.815);
+        }
+
+        .item-02 {
+            background-color: rgb(102, 102, 238);
+        }
+
+        .item-03 {
+            background-color:lightgreen;
+        }
+
+        .item-04 {
+            background-color: orange;
+        }
+
+        .item-05 {
+            background-color: gray;
+        }
+
+        .item-06 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-01 item">ITEM 1</div>
+        <div class="item-02 item">ITEM 2</div>
+        <div class="item-03 item">ITEM 3</div>
+        <div class="item-04 item">ITEM 4</div>
+        <div class="item-05 item">ITEM 5</div>
+        <div class="item-06 item">ITEM 6</div>
+    </div>
+    <div class="container2">
+        <div class="item-01 item">ITEM 1</div>
+        <div class="item-02 item">ITEM 2</div>
+        <div class="item-03 item">ITEM 3</div>
+        <div class="item-04 item">ITEM 4</div>
+        <div class="item-05 item">ITEM 5</div>
+        <div class="item-06 item">ITEM 6</div>
+    </div>
+</body>
+</html>
