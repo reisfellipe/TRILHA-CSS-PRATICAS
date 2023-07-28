@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Exemplos 11</title>
+    <style>
+        .container {
+            background-color: orchid;
+            padding: 10px;
+            height: 300px;
+            display: grid;
+
+            /*É possível dar nomes às GRID LINES dentro dos colchetes ANTES das medidas*/
+
+            grid-template-columns: [primeira-col] 1fr [segunda-col] 1fr [terceira-col] 1fr;
+            grid-template-rows: [primeira-linha] 1fr [segunda-linha] 1fr;
+        }
+
+        .item {
+            background-color: blueviolet;
+            border: 1px solid;
+        }
+
+        .selected {
+            background-color: peru;
+
+            grid-column: segunda-col / span 1;
+            grid-row: segunda-linha / span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item selected">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+</body>
+</html>
