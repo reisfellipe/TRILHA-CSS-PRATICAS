@@ -8,32 +8,42 @@
         body {
             margin: 0;
             display: grid;
-            height: 100vh;
-            grid-template-columns: 200px 1fr;
-            grid-template-rows:  100px 3fr 1fr;
-            background-color: black;
-            grid-template-areas: "logo navbar" "sidebar main" "sidebar footer";
+            /*
+            grid-template:
+            -- grid-template-rows
+            --grid-template-columns
+            --grid-template-areas
+            */
+
+            grid-template: "header header header header" 200px 
+            "main main . sidebar" 200px
+            "footer footer footer footer" 200px 
+            / 1fr 1fr 1fr 1fr;
         }
         .logo {
             background-color: lightblue;
-            grid-area: logo;
+        }
+
+        .logo img {
+            border-radius: 50%;
+            width: 60px;
         }
 
         nav {
             background-color: yellow;
-            grid-area: navbar;
+            
         }
         aside{
             background-color: gray;
-            grid-area: sidebar;
+            
         }
         main {
             background-color: darkslateblue;
-            grid-area: main;
+            
         }
         footer {
             background-color: yellowgreen;
-            grid-area: footer;
+            
         }
     </style>
 </head>
