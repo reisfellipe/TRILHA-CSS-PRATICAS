@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: rgba(49, 29, 29, 0.418);
+            border: 2px solid;
+            gap: 15px;
+            grid-template: repeat(3, 150px) / repeat(3, 1fr);
+            /*grid: 100px 150px 100px / 1fr 1fr 1fr;*/
+            place-items: start end;
+            /*justify-items: center;
+            align-items: center;*/
+        }
+
+        .item-01 {
+            background: rebeccapurple;
+        }
+
+        .item-02 {
+            background: lightgreen;
+        }
+
+        .item-03 {
+            background: deeppink;
+        }
+
+        .item-04 {
+            background: lightcoral;
+        }
+
+        .item-05 {
+            background: lawngreen;
+        }
+
+        .item-06 {
+            background: darkcyan;
+        }
+        .item-07 {
+            background: darkgreen;
+        }
+
+        .item-08 {
+            background: goldenrod;
+        }
+
+        .item-09 {
+            background: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-01">alallaalla</div>
+        <div class="item-02">ksosksokaoska</div>
+        <div class="item-03">jissjw</div>
+        <div class="item-04">mdsmdeodejidijwdoj</div>
+        <div class="item-05">aksnoidiwd</div>
+        <div class="item-06">oi</div>
+        <div class="item-07">lalala</div>
+        <div class="item-08">instagrma</div>
+        <div class="item-09">aniohwd93</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid;
+            height: 600px;
+
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            gap: 10px 20px;
+        }
+
+        .item-01 {
+            background: rebeccapurple;
+        }
+
+        .item-02 {
+            background: lightgreen;
+        }
+
+        .item-03 {
+            background: deeppink;
+        }
+
+        .item-04 {
+            background: lightcoral;
+        }
+
+        .item-05 {
+            background: lawngreen;
+        }
+
+        .item-06 {
+            background: darkcyan;
+        }
+        .item-07 {
+            background: darkgreen;
+        }
+
+        .item-08 {
+            background: goldenrod;
+        }
+
+        .item-09 {
+            background: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-01"></div>
+        <div class="item-02"></div>
+        <div class="item-03"></div>
+        <div class="item-04"></div>
+        <div class="item-05"></div>
+        <div class="item-06"></div>
+        <div class="item-07"></div>
+        <div class="item-08"></div>
+        <div class="item-09"></div>
+    </div>
+</body>
+</html>
