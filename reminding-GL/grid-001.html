@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            background-color: orange;
+            border: 2px solid;
+            padding: 10px;
+            height: 600px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);/
+        }
+
+        .item {
+            padding: 5px;
+            border: 1px solid;
+            background-color: dodgerblue;
+        }
+
+        .selected {
+            background-color: deeppink;
+            grid-column: 3 /4;
+            grid-row: 2 /3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-01 selected">item 01</div>
+        <div class="item item-02">item 02</div>
+        <div class="item item-03">item 3</div>
+        <div class="item item-04">item 4</div>
+        <div class="item item-05">item 5</div>
+        <div class="item item-06">item 6</div>
+    </div>
+</body>
+</html>
