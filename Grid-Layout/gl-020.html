@@ -9,12 +9,11 @@
             display: grid;
             background-color: rgba(49, 29, 29, 0.418);
             border: 2px solid;
+
             gap: 15px;
+
             grid-template: repeat(3, 150px) / repeat(3, 1fr);
-            /*grid: 100px 150px 100px / 1fr 1fr 1fr;*/
             place-items: center;
-            /*justify-items: center;
-            align-items: center;*/
         }
 
         .item-01 {
@@ -35,6 +34,8 @@
 
         .item-05 {
             background: lawngreen;
+            align-self: center;
+            justify-self: start;
         }
 
         .item-06 {
@@ -42,6 +43,7 @@
         }
         .item-07 {
             background: darkgreen;
+            place-self: stretch;
         }
 
         .item-08 {
@@ -50,6 +52,7 @@
 
         .item-09 {
             background: palevioletred;
+            place-self: start stretch;
         }
     </style>
 </head>
