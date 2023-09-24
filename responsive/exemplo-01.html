@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Exemplo</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: lightblue;
+            padding: 60px;
+            text-align: center;
+        }
+
+        header h2 {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        .details {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            background-color: lightblue;
+            padding: 16px;
+            border-radius: 10px;
+        }
+
+        .image-card {
+            background-color: lightblue;
+            border: 1px solid #e2e2e2;
+            padding: 10px;
+            flex-basis: 200px;
+        }
+
+        .image-card img {
+            width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Layouts Flexíveis</h1>
+        <h2>Exemplo de layouts flexíveis utilizando FlexBox</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Saiba Mais</h3>
+            <div class="details">
+                <div class="cards">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod pariatur commodi quis perspiciatis maxime accusamus possimus iusto labore sit voluptate repellendus, at qui ipsum impedit, nihil nesciunt soluta perferendis?
+                </div>
+                <div class="cards">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod pariatur commodi quis perspiciatis maxime accusamus possimus iusto labore sit voluptate repellendus, at qui ipsum impedit, nihil nesciunt soluta perferendis?
+                </div>
+                <div class="cards">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod pariatur commodi quis perspiciatis maxime accusamus possimus iusto labore sit voluptate repellendus, at qui ipsum impedit, nihil nesciunt soluta perferendis?
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Galeria de imagens</h3>
+            <div class="gallery">
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt="imagem aleatória">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+</html>
