@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav li {
+            background-color: lightseagreen;
+            padding: 8px;
+            border-radius: 7px;
+            list-style: none;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        #skills {
+            background-color: lightblue;
+            border: 2px solid goldenrod;
+            border-radius: 4px;
+        }
+
+        #skills li {
+            list-style: decimal;
+        }
+
+        #education {
+            background-color: lightblue;
+            border: 2px solid blue;
+            border-radius: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width:720px) {
+
+            body {
+                padding-right: 16px;
+            }
+
+            main {
+                flex-direction: row;
+                gap: 24px;
+                max-width: 1200px;
+                margin: 16px auto;
+            }
+
+            #apresentacao {
+                flex-basis: 500px;
+            }
+
+            #skills, #education {
+                flex: 1;
+            }
+
+            nav ul{
+                flex-direction: row;
+            }
+
+            nav ul li {
+                flex: 1;
+                text-align: center;
+            }
+
+        }   
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Conheça meu trabalho</a></li>
+                <li><a href="#">Trabalhe conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao">
+            <h1>Fellipe Reis dev</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, mollitia in commodi sequi molestiae, dolor quas asperiores, obcaecati excepturi laudantium tempore omnis quo repudiandae optio eveniet fugiat tenetur porro voluptates.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus excepturi aspernatur voluptas dignissimos sequi hic? Laboriosam nam cupiditate eos recusandae, voluptates inventore quia doloremque accusantium nemo, ducimus, enim quis tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam in quos voluptatem. Totam architecto magni incidunt delectus tempora necessitatibus blanditiis, deleniti nobis provident? Laboriosam, dolor! Quam est rem laboriosam!</p>
+        </section>
+
+        <section id="skills">
+
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>BootStrap</li>
+            </ul>
+
+        </section>
+
+        <sectionn id="education">
+
+            <ul>
+                <li>Faculdade Descomplica</li>
+                <li>Digital Innovation One</li>
+                <li>Análise e desenvolvimento de sistemas</li>
+            </ul>
+
+        </sectionn>
+
+    </main>
+</body>
+</html>
