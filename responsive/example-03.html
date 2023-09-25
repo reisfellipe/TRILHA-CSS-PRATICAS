@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=width-device, initial-scale=1, user-scalablel=no">
     <title>Exemplo de Viewport</title>
+    <style>
+
+        h1{
+            color: red;
+        }
+
+        
+        @media screen and (min-width: 400px ){
+
+            h1 {
+                color: orange;
+            }
+            h1::after {
+            content: 'ACIMA DE 400PX';
+            color: blue;
+        }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            img {
+                margin: auto
+            };
+
+        }
+
+    </style>
 </head>
 <body>
     
