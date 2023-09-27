@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+
+        p:target::before {
+            content: "⇒";
+            margin-right: 10px;
+            background-color: rgb(69, 255, 255);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo-classes - :target</h1>
+    <h2>Tble of Contents</h2>
+    <ol>
+        <li><a href="#p1">Pular para o primeiro parágrafo!</a></li>
+        <li><a href="#p2">Pular para o segundo parágrafo</a></li>
+        <li><a href="#nowhere">Esse link não vai para lugar nenhum</a></li>
+    </ol>    
+
+
+    <h2>Meu artigo</h2>
+
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quia est neque ducimus, eius magnam deleniti, cumque qui minima, nulla tempore tempora! Quibusdam obcaecati blanditiis asperiores dolore dolores facere veritatis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quaerat sed ab atque earum aperiam odio vero quibusdam debitis asperiores? Quo possimus, nihil maxime natus commodi officiis maiores ducimus esse.</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet, rerum aspernatur veritatis veniam laborum cumque incidunt voluptatem consectetur odit perferendis quos porro inventore. Omnis labore culpa assumenda ipsa illum.</p>
+</body>
+</html>
