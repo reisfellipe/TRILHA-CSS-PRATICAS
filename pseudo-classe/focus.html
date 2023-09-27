@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+
+        label, button {
+            display: block;
+            margin: 10px;
+            font-size:1.5rem;
+
+        }
+
+        input, select {
+            font-size: 1.5rem;
+        }
+
+        input:focus {
+            outline: 2px solid darkcyan;
+        }
+
+        select:focus {
+            background-color: lightcyan;
+        }
+
+        /*É aplicado quando está focado com o TAB*/
+        button:focus-visible {
+            outline: 3px solid rebeccapurple;
+            outline-offset: 2px;
+            color: orangered;
+            background-color: greenyellow;
+        }
+
+
+        /*Quando algum elemento dentro de label estiver em FOCO será aplicado*/
+        label:focus-within {
+            font-weight: bold;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo classes - :focus,  :focus-within  e  :focus-visible</h1>
+
+    <form>
+        <p>Faça seu pedido! Escolha o sabor do sorvete</p>
+
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+        <label>
+            Sabor do Sorvete:
+            <select name="sabor">
+                <option value="chocolate">Chocolate</option>
+                <option value="flocos">Flocos</option>
+                <option value="Iorgute">Iorgute</option>
+                <option value="Morango">Morango</option>
+            </select>
+       
+            <button>Finalizar pedido</button>
+        </label>
+
+    </form>
+
+
+
+</body>
+</html>
