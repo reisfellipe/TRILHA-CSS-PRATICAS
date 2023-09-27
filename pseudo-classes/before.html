@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+
+        body {
+            background-color: rgb(241, 225, 225);
+        }
+
+        code{
+            background-color: lightgreen;
+            font-size: 1.3rem;
+        }
+
+        .exemplo::before {
+            content: "♥";
+            background-color: orange;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .exemplo::after {
+            content: "♥";
+            background-color: rgb(58, 253, 90);
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+
+        .exemplo-1::before {
+            content: "CRIADO POR BEFORE  ";
+            background-color: lightgreen;
+            padding-inline-start: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de decrarala-lo no HTML, ou para selecionar uma parte de algum element.</p>
+
+    <p>identificado por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::before</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador antes do elemento HTML.</p>
+
+    <h2 class="exemplo">Exemplo</h2>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero natus aliquam? Est magni iste necessitatibus labore eaque sit non cum impedit error, commodi nihil, ipsam nemo, saepe dicta eius?</p>
+
+    <p class="exemplo-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem officia ab mollitia, saepe quaerat impedit laudantium corporis totam quos error ipsa aspernatur sint corrupti atque praesentium odit odio animi rem.orem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illum laudantium, id architecto quo ipsam molestias aliquid reprehenderit unde odit explicabo ducimus magni magnam eum non nemo. Consequuntur, quibusdam rerum?</p>
+    
+
+
+</body>
+</html>
