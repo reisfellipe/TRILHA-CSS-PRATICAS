@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+
+        body {
+            background-color: gray;
+        }
+
+        code {
+            background-color: lightgreen;
+        }
+
+        ul li::marker{
+            content: '→ ';
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de decrarala-lo no HTML, ou para selecionar uma parte de algum element.</p>
+
+    <p>identificado por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::marker</code></h2>
+    <p>Permite estiizar os tópicos ou números de uma lista (li) ou então a flecha de um elemento <code>summary</code></p>
+    <p>Aceita propriedades como:</p>
+
+    <ul>
+        <li>color</li>
+        <li>content</li>
+        <li>white-space</li>
+        <li>font</li>
+        <li>animation</li>
+        <li>transition</li>
+    </ul>
+
+</body>
+</html>
