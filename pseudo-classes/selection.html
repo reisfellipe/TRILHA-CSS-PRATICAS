@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+
+        body {
+            background-color: rgb(238, 231, 231);
+        }
+
+        .exemplo::selection {
+            background-color: rgba(9, 165, 165, 0.699);
+            color: white;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de decrarala-lo no HTML, ou para selecionar uma parte de algum element.</p>
+
+    <p>identificado por <code>::palavra-chave</code></p>
+
+    <h2>Pseudo-elemento - <code>::selection</code></h2>
+    <p>Permite estilizar a seleção de textos no navegador</p>
+    <p>Propriedades aceitas:</p>
+    <ul>
+        <li>color</li>
+        <li>background-color</li>
+        <li>text</li>
+    </ul>
+    
+    <p>exemplo</p>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi omnis, maiores aspernatur laudantium reiciendis incidunt, veritatis ullam consequuntur sint numquam pariatur. Ut pariatur quaerat praesentium ab consequatur rem eum eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut, sint officia cumque, quo voluptas quas ipsum enim iste quia assumenda ratione veniam nulla maiores voluptatem fugiat quidem aliquam! Eum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi placeat dolor quia voluptatibus voluptate provident culpa modi. Dolor at hic consectetur. Tenetur ipsam quaerat eligendi harum iure accusantium ab!Lorem Lorem</p>
+</body>
+</html>
