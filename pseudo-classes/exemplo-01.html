@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+
+        body {
+            font-size: 1.3rem;
+        }
+
+        code {
+            background-color: lightgray;
+        }
+
+        p::first-letter {
+            color: blue;
+        }
+
+        p::first-line {
+            background-color: lightgreen;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <p>Usado para adicionar elementos extras na página, sem a necessidade de declara-lo no HTML, ou para selecionar uma parte de algum elemento.</p>
+    <p>Identifica por <code>::first-letter</code></p>
+    <p>Propriedades disponíveis:</p>
+
+    <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+    <p>Selecioona a primeira letra da primeira linha 
+        testestestetstetstettetstetsetstetsetstetsetes
+    </p>
+    <ul>
+        <li><code>color</code></li>
+        <li><code>background</code></li>
+        <li><code>margin</code></li>
+        <li><code>padding</code></li>
+        <li><code>border</code></li>
+        <li><code>font</code></li>
+        <li><code>propriedades de texto</code></li>
+    </ul>
+</body>
+</html>
