@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        body{
+        background-color: rgb(0, 7, 104);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        form label, form button {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input {
+            padding: 4px 14px;
+            margin-top: 8px;
+        }
+
+        form {
+            border: 1px solid gray;
+            border-radius: 8px;
+            width: 300px;
+            padding: 40px;
+            margin: 30px auto;
+            background-color: white;
+            color: black;
+        }
+
+        form h3 {
+            margin: 0;
+        }
+
+        :root {
+            background-color: palegoldenrod;
+        }/* Quase como colocar HTML  */
+
+</style>
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">:root</label>
+    </div>
+    <hr>
+
+    <form>
+        <h3>Faça sua compra:</h3>
+        <label for="email" required>E-mail</label>
+        <input type="email" name="email" required placeholder="nome@exemplo.com">
+
+        <label for="codigo-produto">Senha:</label>
+        <input type="password" name="codigo-produto" min="1000">
+
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
