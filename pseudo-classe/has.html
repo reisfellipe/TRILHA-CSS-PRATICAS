@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+
+    <style> 
+
+        :root {
+            background-color: rgb(217, 221, 221);
+            color: rgb(0, 0, 0);
+        }
+
+        input[type="checkbox"]:checked + label {
+            accent-color: orange;
+            text-decoration: line-through;
+            color: purple;
+        }
+
+        figure {
+            width: 100px;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        } 
+
+        .gallery figure {
+            box-shadow: 0 0 5px 2px lightgray;
+        }
+
+        figcaption {
+            font-size: 0.75rem;
+        }
+
+        .gallery figure:has(figcaption) {
+            border: 1px solid black;
+            border-radius: 9px;
+            padding: 8px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <input type="checkbox" name="task-01">
+    <label for="task-01">:has</label>
+
+    <hr>   
+
+    <div class="gallery">
+        <figure>
+            <img width="100"  src="https://source.unsplash.com/random" alt="com texto alternativo">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+        <figure>
+            <img width="100"  src="https://source.unsplash.com/random" alt="com texto alternativo">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+        <figure>
+            <img width="100"  src="https://source.unsplash.com/random" alt="com texto alternativo">
+        </figure>
+        <figure>
+            <img width="100"  src="https://source.unsplash.com/random" alt="com texto alternativo">
+        </figure>
+        <figure>
+            <img width="100"  src="https://source.unsplash.com/random" alt="com texto alternativo">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
