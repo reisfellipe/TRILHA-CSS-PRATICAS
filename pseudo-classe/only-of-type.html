@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe</title>
+
+    <style>
+
+        :root {
+            background-color: lightsalmon;
+        }
+
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;
+            accent-color: rgb(10, 134, 62);
+            color: blue;
+            text-decoration: line-through;
+        }
+
+        input:checked::after{
+            content: 'Aprendido!';
+            color: green;
+            font-weight: bold;
+            margin-left: 6rem;
+        }
+
+        i, em {
+            display: block;
+        }
+
+
+        main :only-of-type {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        Pseudo classes
+    </h1>
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">:only-of-type</label>
+    </div>
+    <hr>
+    <ul>
+        <li>item 1</li>
+    </ul>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3 </li>
+        <li>item 4</li>
+    </ul>
+
+    <hr>
+    <main>
+        <div>
+            eu sou o div
+            <p>eu sou um parágrafo</p>
+            <span>eu sou span</span>
+            <i>eu sou filho único i</i>
+            <em>EU SOU o em #1</em>
+            <em>EU SOU O em #2</em>
+        </div>
+    </main>
+</body>
+</html>
