@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+
+    <style> 
+
+        :root {
+            background-color: cadetblue;
+            color: wheat;
+        }
+
+        input[type="checkbox"]:checked + label {
+            accent-color: orange;
+            text-decoration: line-through;
+            color: purple;
+        }
+
+        /* .post h2, 
+        .post li,
+        .post .red {
+            color: red;
+        }*/
+
+        .post :is(h2, li, .red, blabl@anything){
+            color: deeppink;
+        }
+
+        :is(section, aside, nav, main) p {
+            color: black;
+            background-color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <input type="checkbox" name="task-01">
+    <label for="task-01">:is</label>
+
+    <hr>
+
+    <article class="post">
+
+        <h2>Mu post:</h2>
+        <p>Sumário:</p>
+        <ul>
+            <li>Capítulo 01:</li>
+            <li>Capítulo 02:</li>
+            <li>Capítulo 03:</li>
+            <li>Capítulo 04:</li>
+        </ul>
+
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias placeat doloribus earum eaque officia dolor, corrupti unde dolorem, laudantium perspiciatis. Obcaecati nemo quisquam et aliquid recusandae, quibusdam autem molestias?</p>
+        <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex vitae ducimus quaerat voluptatibus, accusamus dolore similique et hic perferendis sequi doloremque facilis, repellat velit minus odio, ad consequuntur alias.</p>
+
+    </article>
+
+    <hr>
+
+    <section>
+        <p>Exemplo 1</p>
+    </section>
+
+    <aside>
+        <p>Exxemplo 2</p>
+    </aside>
+
+    <main>
+        <p>Exemplo 3</p>
+    </main>
+
+    <nav>
+        <p>Exemplo 4</p>
+    </nav>
+
+    <article>
+        <p>Exemplo 5</p>
+    </article>
+
+</body>
+</html>
