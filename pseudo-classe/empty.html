@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe</title>
+
+    <style>
+
+        :root {
+            background-color: rgb(102, 156, 192);
+        }
+
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;
+            accent-color: rgb(10, 134, 62);
+            color: blue;
+            text-decoration: line-through;
+        }
+
+        input:checked::after{
+            content: 'Aprendido!';
+            color: rgb(17, 17, 17);
+            font-weight: bold;
+            margin-left: 6rem;
+        }
+
+        div {
+            height: 16px;
+            background-color: lightgreen;
+        }
+        
+        #elemento-content::before {
+            content: '!!!!!!!';
+        }
+
+
+        div:empty {
+            border: 2px solid deeppink;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        Pseudo classes
+    </h1>
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">:empty</label>
+    </div>
+    <hr>
+    <p>Elemento sem conteúdo:</p>
+    <div></div>
+
+    <p>Elemento com comentário:</p>
+    <div>
+        <!--Simple comments-->
+    </div>
+
+    <p>Elemento com espaço em branco:</p>
+    <div> </div>
+
+    <p>Elemento com elemento vazio dentro dele</p>
+    <div>
+        <p></p>
+    </div>
+
+    <p>Elemento com propriedade content:</p>
+    <div id="elemento-content"></div>
+</body>
+</html>
