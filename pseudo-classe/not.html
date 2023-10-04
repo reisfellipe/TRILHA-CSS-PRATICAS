@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+
+    <style> 
+
+        :root {
+            background-color: cadetblue;
+            color: rgb(0, 0, 0);
+        }
+
+        input[type="checkbox"]:checked + label {
+            accent-color: orange;
+            text-decoration: line-through;
+            color: purple;
+        }
+
+        .post p:not(.irrelevante) {
+            color: red;
+        }
+
+        li:not(:first-child, :last-child){
+            font-weight: bold;
+        }
+
+        img:not([alt]) {
+            border: 3px solid orangered;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <input type="checkbox" name="task-01">
+    <label for="task-01">:not</label>
+
+    <hr>   
+
+    <div class="post">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore aliquid iure, voluptatibus delectus eaque esse magnam in quod at ipsum? Vel quae dicta, autem porro laboriosam consequatur laborum aut?</p>
+        <p>Lorem <b>ipsum dolor</b> sit amet consectetur adipisicing elit. Perspiciatis dolor non possimus rem exercitationem libero pariatur ducimus facere, voluptates ipsam id ab modi error quisquam quam sed blanditiis sapiente accusamus.</p>
+        <p>Lorem ipsum dolor sit<b> amet consectetur</b> adipisicing elit. Eius, blanditiis placeat? Aspernatur, fuga consequuntur? Quos non illo inventore ipsam cupiditate accusantium tenetur, enim provident itaque facere asperiores debitis consequatur nisi?</p>
+        <p class="irrelevante">Ignorar esse parágrafo!</p>
+
+    </div>
+    <hr>
+
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+    </ul>
+    <hr><br><br>
+    <img width="200" height="200" src="https://source.unsplash.com/random" alt="com texto alternativo">
+    <img width="200" height="200" src="https://source.unsplash.com/random" >
+
+</body>
+</html>

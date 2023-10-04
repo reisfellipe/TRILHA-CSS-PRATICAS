@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+
+    <style> 
+
+        :root {
+            background-color: cadetblue;
+            color: wheat;
+        }
+
+        input[type="checkbox"]:checked + label {
+            accent-color: orange;
+            text-decoration: line-through;
+            color: purple;
+        }
+
+        .post :is(h2, li, .red ){
+            color: deeppink;
+        }
+
+        section p,
+        article p,
+        main p,
+        nav p,
+        aside p {
+            color: aqua;
+            background-color: chocolate;
+        }
+
+        :where(section, article, main, nav, aside) p {
+            background-color: blueviolet;
+            color: beige;
+            font-weight: 700;
+        }
+
+
+        /* Faz quase a mesma coisa que a pesudo classe :IS porém tem uma especificidade menos forte, perdendo para outras que tem prioridades mais fortes */
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+    <input type="checkbox" name="task-01">
+    <label for="task-01">:where</label>
+
+    <hr>
+
+
+    <section>
+        <p>Exemplo 1</p>
+    </section>
+
+    <aside>
+        <p>Exemplo 2</p>
+    </aside>
+
+    <main>
+        <p>Exemplo 3</p>
+    </main>
+
+    <nav>
+        <p>Exemplo 4</p>
+    </nav>
+
+    <article>
+        <p>Exemplo 5</p>
+    </article>
+
+</body>
+</html>
