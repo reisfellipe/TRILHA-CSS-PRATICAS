@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+
+        :root {
+            background-color: rgb(160, 91, 45);
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: rgb(84, 4, 138);
+        }
+
+        li:nth-last-child(odd) {
+            font-weight: bold;
+            color: yellow;
+        }
+
+        dt:nth-last-of-type(1){
+            color: aqua;
+        }
+
+        dd:nth-last-of-type(3) {
+            color: red;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Pseudo-classes</h1>
+    <div>
+        <input type="checkbox" name="task-01">
+        <label for="task-01">:nth-last-child</label>
+    </div>
+    <div>
+        <input type="checkbox" name="task-02">
+        <label for="task-02">:nth-last-of-type</label>
+    </div>
+    <hr>
+    <p>uma lista necessária</p>
+    <ol reversed>
+        <li>oitava</li>
+        <li>sétima</li>
+        <li>sexta</li>
+        <li>quinta</li>
+        <li>quarta</li>
+        <li>terceira</li>
+        <li>segunda</li>
+        <li>primeira</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>Vegetais:</dt>
+        <dd>Tomate</dd>
+        <dd>Pepinos</dd>
+        <dd>Cogumelos</dd>
+    </dl>
+    <dl>
+        <dt>Frutas:</dt>
+        <dd>Uva</dd>
+        <dd>Banana</dd>
+        <dd>Melância</dd>
+    </dl>
+</body>
+</html>
