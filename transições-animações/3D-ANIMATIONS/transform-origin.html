@@ -16,35 +16,40 @@
             justify-content: center;
             align-items: center;
 
+            /* Essas popriedades tem que serem aplicadas no elemento pai, onde estará os elementos com transform */
             perspective: 300px;
+            perspective-origin: top;
+            transform-style: preserve-3d;
         }
 
         .box {
-            background: linear-gradient(90deg, #FC466B 0%, rgb(112, 29, 112));
             width: 200px;
             height: 200px;
             border-radius: 8px;
             box-shadow: 4px 4px 15px black;
             text-align: center;
             transition: all .7s;
-            /* transform-origin: 0 0; */
-            margin-left: 10px;
+            position: absolute;
         }
 
-        .box:hover {
-            transform: scale(1.7); 
+        .box:nth-child(1) {
+            background: linear-gradient(90deg, #FC466B 0%, rgb(40, 99, 177));
+            transform: rotateY(40deg);
         }
 
-        h1.nome {
-            color: yellow;
+        .box:nth-child(2) {
+            background: linear-gradient(90deg, #FC466B 0%, rgb(109, 7, 224));
+            transform: rotateY(-40deg);
         }
-        
-
 
     </style>
 
 </head>
 <body>
+    <div class="box">
+        <h1>DIV</h1>
+    </div>
+    
     <div class="box">
         <h1>DIV</h1>
     </div>
