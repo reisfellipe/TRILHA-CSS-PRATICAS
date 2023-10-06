@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkblue;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background: linear-gradient(90deg, #FC466B 0%, rgb(112, 29, 112));
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 15px black;
+            text-align: center;
+            transition: all .7s;
+        }
+    
+        .box h1{
+            color: darkblue;
+        }
+
+        /* matrix: matrix(
+            scaleX()
+            skewY(1.2) =  aceita fracionado só
+            skewX() =  aceita fracionado só
+            scaleY()
+            translateX() = Não precisa por medida de px
+            translateY() = Não precisa por medida de px
+        )   */
+        .box:hover {
+            transform: matrix(1.2,1.2,0,1.2,50,0); 
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <h1>DIV</h1>
+    </div>
+</body>
+</html>
