@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION</title>
+
+    <style>
+
+        body {
+            background: gray;
+        }
+
+        .box {
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+            transition: width 2s;
+        }
+
+        .box:nth-of-type(odd){
+            border: 3px solid rgb(0, 39, 145);
+        }
+
+        .box:nth-of-type(even){
+            box-shadow: 4px 4px 0 black;
+        }
+
+        .box:nth-of-type(1){
+            transition-timing-function: linear;
+
+        }
+        .box:nth-of-type(2){
+            transition-timing-function: ease;
+        }
+        .box:nth-of-type(3){
+            transition-timing-function: ease-in;
+        }
+        .box:nth-of-type(4){
+            transition-timing-function: ease-out;
+        }
+        .box:nth-of-type(5){
+            transition-timing-function: ease-in-out;
+            color: darkblue;
+        }
+        .box:nth-of-type(6){
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .box:hover {
+            width: 95vw;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>The transisiton-timing-function Property</h1>
+    <h3>Hover over the div elements below, to see the different speed curves</h3>
+    <div class="box">
+        <p>LINEAR</p>
+    </div>
+    <div class="box">
+        <p>EASE</p>
+    </div>
+    <div class="box">
+        <p>EASE-IN</p>
+    </div>
+    <div class="box">
+        <p>EASE-OUT</p>
+    </div>
+    <div class="box">
+        <p>EASE-IN-OUT</p>
+    </div>
+    <div class="box">
+        <p>CUBIC-BUZIER</p>
+    </div>
+</body>
+</html>
