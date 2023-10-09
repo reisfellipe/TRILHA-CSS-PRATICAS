@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+
+    <style> 
+    
+        body {
+            background-color: lightblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgb(21, 96, 170);
+            animation-name: firstAnimation;
+            animation-duration: 5s;
+        }
+
+        /* É POSSÍVEL USAR PORCENTAGENS AO INVES DE from  to */
+
+        @keyframes firstAnimation {
+            0% {
+                background: palegreen;
+                width: 200px;
+            }
+            50% {
+                background-color: purple;
+                width: 500px;
+                height: 450px;
+            }
+            100% {
+                background: blue;
+                width: 100px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        
+    </div>
+
+
+</body>
+</html>
