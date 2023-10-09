@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+
+    <style> 
+    
+        body {
+            background-color: rgb(68, 7, 7);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            animation-name: firstAnimation;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            /* animation-direction: reverse; */
+            animation-fill-mode: backwards;
+            /* 
+             ---> animatio-fill-mode:
+             >forwards = Ele vai manter os parâmetros aplicados no ULTIMO keyframe
+
+            >backwards = Ele vai manter os parâmetros aplicados no PRIMEIRO KEYFRAME
+
+            >both = Não volta pro tm original
+
+            */
+        }
+
+
+        @keyframes firstAnimation {
+            0% {
+                background: rgb(98, 248, 61);
+            }
+            50% {
+                background-color: purple;
+                width: 500px;
+            }
+            100% {
+                background: rgb(225, 0, 255);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        
+    </div>
+
+
+</body>
+</html>
