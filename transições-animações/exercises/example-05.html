@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Práticas Animações - 05</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: #222;
+            perspective: 300px;
+        }
+
+        h1{
+            font-family: 'Quicksand', cursive;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        .box{
+            background: linear-gradient(90deg, #FC466B, #3F5EFB);
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            animation: looping 5s infinite alternate;
+            filter: blur(100px); 
+            position: absolute;
+        }
+
+        @keyframes looping {
+            0%{
+                transform: rotateY(30deg) rotate(-25deg) translateZ(100px);
+            }
+            25%{
+                transform: rotateY(-30deg) translateZ(100px);
+            }
+            50%{
+                transform: rotateX(-50deg) translateZ(-100px);
+            }
+            75%{
+                transform: rotateX(-50deg) translateZ(-100px);
+            }
+            100%{
+                transform: rotateX(20deg) translateZ(0);
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    <h1>reisfellipe.ofc</h1>
+    <p>Development web | Front End</p>
+</body>
+</html>
