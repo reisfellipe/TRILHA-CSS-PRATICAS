@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Animação - 01</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            height: 100vh;
+            background: #112b72;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            color: white;
+            background: linear-gradient(90deg, #d53369, #daae51);
+            box-shadow: 8px 12px 7px rgba(0, 0, 0, 0.623);
+            font-size: 1.7rem;
+            border-radius: 6px;
+            animation: widget 2.2s linear infinite;
+            
+        }
+
+        button:hover {
+            cursor: pointer;
+            filter: brightness(1.1);
+            animation-play-state: paused;
+            animation-direction: reverse;
+        }
+
+        @keyframes widget {
+            0% {
+                transform: rotate(0);
+            }
+            15% {
+                transform: rotate(-15deg);
+            }
+            20% {
+                transform: rotate(10deg);
+            }
+            25%{
+                transform: rotate(-10deg);
+            }
+            30% {
+                transform: rotate(10deg);
+            }
+            35%{
+                transform: rotate(-10deg);
+            }
+            40%, 100%{
+                transform: rotate(0);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button>Clique aqui!</button>
+    
+</body>
+</html>
