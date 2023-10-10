@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Animações - 03</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(rgb(34,34,34) 0%, rgb(34,13,80) 50%, rgb(74,153,230) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rocket {
+            animation: turn-on-rocket 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes turn-on-rocket {
+            0%{
+                transform: translateY(20vh);
+            }
+            50%{
+                transform: translateY(-80vh);
+            }
+            100%{
+                transform: translateY(20vh);
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <img class="rocket" src="https://images.rawpixel.com/image_transparent_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2FpZ2VuZXJhdGVkLTI0MDcyMy1yb2JfcmF3cGl4ZWxfcm9ja2V0X2ljb25fYmx1ZV9wdXJwbGVwaW5rX3JvdW5kZWRfbm90X3NoYXJwX3NpbXBfMDg4NGYzYzEtODJmYi00YTIwLWIyODItZGVmMDlmNjYxOTFiLWhxLXNjYWxlLTVfMDB4XzEucG5n.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 300px; height: 338px; margin: 0px; width: 229px;" alt="Aircraft vehicle missile rocket. AI | Free PNG - rawpixel" jsname="kn3ccd" aria-hidden="false">
+</body>
+</html>
