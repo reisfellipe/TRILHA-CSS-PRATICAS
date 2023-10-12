@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Convenções no CSS</title>
+
+    <style>
+
+        h2{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Hierarquia do Efeito Cascata</h1>
+
+    <p>Estabeleceuma prioriade para aplicação de uma regra de estilo, caso se tenha mais de uma regra para um mesmo seletor CSS.</p>
+
+
+    <p>Se houver um conflito, o navegador irá
+    </p>
+
+    <ol>
+        <li>Analisar todas as regras;</li>
+        <li>Ver o nível de importância na rigem do elemento</li>
+        <li>Comparar a especificidade das declarações com mesmo nível de importância (entra o cálculi de especificidade)</li>
+        <li>Em caso de empate do grau de especificidade, irá olhar a ordem de declarações colocada dentro dos aquviso de código. A regra CSS que for declarada por último, irá ser selecionada.</li>
+    </ol>
+    <h2 style="color: blue;">[Exemplo de hierarquia]</h2>
 </body>
 </html>
